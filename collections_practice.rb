@@ -40,3 +40,7 @@ def merge_data(name, info) ##merge_data combines two nested data structures into
    name.each {|i| info.first.map {|key,value| if i.values[0] == key then arry << i.merge(value) end}}
    arry
 end
+
+def find_cool(cool) #find_cool find all cool hashes
+    cool.select {|i| i.any? {|k,v| v == "cool"}}
+end
