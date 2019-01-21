@@ -5,7 +5,7 @@ def begins_with_r(array)
   end
 end
 
-def contain_a(array)
+def contain_a(array) #return all elements that contain the letter 'a'"
   array.select do |str|
     str.include?('a')
   end
