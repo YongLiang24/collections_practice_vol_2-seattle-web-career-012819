@@ -24,7 +24,14 @@ def remove_non_strings(array) #remove anything that's not a string from an array
 end
 
 def count_elements(array) ##count_elements count how many times something appears in an array
-     array.uniq.each {|id| count = 0
-        array.each {|id2| if id2 == id then count += 1 end}
-        id[:count] = count}
+  array.uniq.each do |id|
+    count =0
+    array.each do |id2|
+      if id2 == id
+        count +=1
+      end
+      id[:count]=count
+    end
+  end
+
 end
