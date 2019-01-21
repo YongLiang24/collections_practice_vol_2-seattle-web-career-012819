@@ -29,10 +29,10 @@ def count_elements(array) ##count_elements count how many times something appear
     array.each do |id2|
       if id2 == id
         count +=1
-        id[:count]=count
       end
 
     end
+    id[:count]=count
   end
 
 end
