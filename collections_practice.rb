@@ -36,13 +36,7 @@ def count_elements(array) ##count_elements count how many times something appear
 end
 
 def merge_data(name, info) ##merge_data combines two nested data structures into one
-array=[]
-name.each do |i|
-  info.first.collect do |key, value|
-    if i.value[0] == key
-      array << i.merge(value)
-    end
-  end
-  return array
-end
+  merged = []
+   keys.each {|i| data.first.map {|k,v| if i.values[0] == k then merged << i.merge(v) end}}
+   merged
 end
