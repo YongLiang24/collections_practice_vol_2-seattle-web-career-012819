@@ -31,7 +31,7 @@ def count_elements(array) ##count_elements count how many times something appear
         count +=1
         id[:count]=count
       end
-      
+
     end
   end
 
