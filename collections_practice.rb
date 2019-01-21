@@ -10,3 +10,9 @@ def contain_a(array) #return all elements that contain the letter 'a'"
     str.include?('a')
   end
 end
+
+def first_wa(array) #Return the first element that begins with the letters 'wa'"
+  array.find do |string|
+    string[0] == 'w' && string[1] == 'a'
+  end
+end
