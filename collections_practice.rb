@@ -13,6 +13,6 @@ end
 
 def first_wa(array) #Return the first element that begins with the letters 'wa'"
   array.find do |str|
-    str[0] == 'w' && string[1] == 'a'
+    str[0] == 'w' && str[1] == 'a'
   end
 end
