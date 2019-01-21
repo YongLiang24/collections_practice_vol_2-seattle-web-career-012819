@@ -39,7 +39,7 @@ def merge_data(name, info) ##merge_data combines two nested data structures into
 array=[]
 name.each do |i|
   info.first.collect do |key, value|
-    if i.values[0] == key
+    if i.value[0] == key
       array << i.merge(value)
     end
   end
