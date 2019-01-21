@@ -1,5 +1,5 @@
 # your code goes here
-def begins_with_r(array)
+def begins_with_r(array) #Return true if every element of the tools array starts with an "r" and false otherwise.
   array.all? do |str|#the all? method returns true if the block never returns false or nil
     str[0] == 'r'
   end
