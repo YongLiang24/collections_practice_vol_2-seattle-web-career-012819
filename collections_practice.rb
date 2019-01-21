@@ -45,9 +45,4 @@ name.each do |i|
   end
   return array
 end
-
-  
-  merged = []
-  name.each {|i| info.first.collect {|k,v| if i.values[0] == k then merged << i.merge(v) end}}
-  merged
 end
