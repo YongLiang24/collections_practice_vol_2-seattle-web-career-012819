@@ -16,3 +16,9 @@ def first_wa(array) #Return the first element that begins with the letters 'wa'"
     str[0] == 'w' && str[1] == 'a' 
   end
 end
+
+def remove_non_strings(array) #remove anything that's not a string from an array
+  array.delete_if do |none_str|
+    !none_str.is_a?(String)
+  end
+end
