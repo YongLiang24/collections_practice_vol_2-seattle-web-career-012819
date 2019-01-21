@@ -40,7 +40,7 @@ array=[]
 name.each do |i|
   info.first.collect do |key, value|
     if i.values[0] == key
-      array << i.array(value)
+      array << i.merge(value)
     end
   end
   return array
