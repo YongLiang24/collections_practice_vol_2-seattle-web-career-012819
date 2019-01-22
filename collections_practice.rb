@@ -37,7 +37,7 @@ end
 
 def merge_data(name, info) ##merge_data combines two nested data structures into one
   arry = []
-   name.each {|i| info.first.map {|key,value| if i.values[0] == key then arry << i.merge(value) end}}
+   name.each {|i| info.first.collect {|key,value| if i.values[0] == key then arry << i.merge(value) end}}
    arry
 end
 
