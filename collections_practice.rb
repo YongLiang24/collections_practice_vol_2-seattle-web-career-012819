@@ -42,8 +42,8 @@ def merge_data(name, info) ##merge_data combines two nested data structures into
 end
 
 def find_cool(array) #find_cool find all cool hashes
-    cool.select {|i| i.any? {|k,v| v == "cool"}}
-    
+  #  cool.select {|i| i.any? {|k,v| v == "cool"}}
+
     array.select do |i|
       i.any? do |key, value|
         value == "cool"
