@@ -48,3 +48,9 @@ def find_cool(array) #find_cool find all cool hashes
       end
     end
 end
+
+def organize_schools(schools) #organize_schools organizes the schools by location
+    locations_hash = {}
+    schools.collect {|k,v| locations_hash[v[:location]] = []}
+    locations_hash.each {|k,v| schools.each {|k1,v1| if k == v1[:location] then v << k1  end}}
+end
